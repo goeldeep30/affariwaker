@@ -17,14 +17,15 @@ def wake_affari():
     return 'Hello, World!'
 
 
+def inner():
+    resp = requests.get('https://affari.herokuapp.com/').content
+    return(resp)
+
+
+while True:
+    print(inner())
+    time.sleep(60 * 10)
+
+
 if __name__ == "__main__":
-
-    def inner():
-        resp = requests.get('https://affari.herokuapp.com/').content
-        return(resp)
-
-    for count in range(60 * 10):
-        print(inner())
-        time.sleep(5)
-
     app.run(port=5100)
