@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "venv/bin/python"
+    ],
+    "python.pythonPath": "venv/bin/python",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint-flask",
+        "pyling-flask-sqlalchemy"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+}
