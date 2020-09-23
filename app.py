@@ -24,7 +24,7 @@ def inner():
 
 while True:
     print(inner())
-    time.sleep(60 * 10)
+    time.sleep(10)
 
 
 if __name__ == "__main__":
